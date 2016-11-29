@@ -32,13 +32,13 @@ bash に比べると貧弱ですが
 この2点だけでも cmd.exe に較べてだいぶ便利です。
 cmd.exe で使えるパスの通った外部コマンドが使えます。
 何もインストールしなくても busybox sh からは busybox 内蔵の unix コマンドが使えます。
-内蔵コマンド一覧は ```busybox -l``` 。
+内蔵コマンド一覧は ``busybox -l`` 。
 
 perl や ruby に比べるとショボいですが、
 sed, awk などが使えるのでそこそこのスクリプトが書けます。
 
-HOMEディレクトリ直下に .profile を置いておくと、``` busybox sh -l ```で起動時に読み込まれます。
-alias, シェル関数, HISTSIZE などを設定できます。
+HOMEディレクトリ直下に .profile を置いておくと、``busybox sh -l``で起動時に読み込まれます。
+alias, シェル関数, HISTFILESIZE などを設定できます。
 
 #### 気づいたこと
 * Ctrl+K できるが Ctrl+Yできない。削除のみ。
@@ -48,13 +48,13 @@ alias, シェル関数, HISTSIZE などを設定できます。
 
 ## vi
 ascii text の編集は大丈夫なのでスクリプトは書けますが使えるコマンドは限られてます。
-windows では ```cmd /k start foo.txt``` などして GUI のエディタを使うと良いです。
+windows では ``cmd /k start foo.txt``などして GUI のエディタを使うと良いです。
 多用するなら alias にしておく。
 
 cat や grep での日本語の出力は大丈夫なようです。
 
 ## その他、使って便利だった or 試してみたいコマンド
-```
+```sh
 busybox -l | less
 grep -r 'foo bar' *
 find . -name '*txt'
