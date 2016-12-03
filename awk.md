@@ -1,9 +1,9 @@
 # AWK cheatsheet
 
-| VAR | | |
-|----:|-|-|
+|   VAR |||
+|------:|---|---|
 | ` NF` | Number of Fields | `$NF` is tail field=column content |
-| ` NR` | Number of Record | `wc -l` : `awk 'END{print NR}'`|
+| ` NR` | Number of Record | `wc -l` : `awk 'END{print NR}'` |
 | ` FS` | Field  Separator | `awk -F 'regex char'` |
 | ` RS` | Record Separator | `awk -v RS="\r\n"` |
 | `OFS` | Output FS        | |
